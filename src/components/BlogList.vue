@@ -2,7 +2,7 @@
   <section class="py-20 bg-gradient-to-b from-transparent via-blue-50/60 to-white pt-40">
     <div class="max-w-6xl mx-auto px-6 sm:px-8">
       <h2 class="text-3xl sm:text-5xl font-bold text-blue-900 text-center mb-10">
-        Nusawave Blog
+        Monsun Blog
       </h2>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">

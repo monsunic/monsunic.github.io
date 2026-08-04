@@ -67,7 +67,7 @@ const services = ref([
   { label: 'Real-Time Sea State Monitoring', value: 'real-time-sea-state-monitoring' },
   { label: 'Predictive Analytics for Offshore Operations', value: 'predictive-analytics-offshore-operations' },
   { label: 'Custom Data Solutions', value: 'custom-data-solutions' },
-  { label: 'Nusawave Academy', value: 'nusawave-academy' },
+  { label: 'Monsun Academy', value: 'monsun-academy' },
   { label: 'Other Inquiries', value: 'other-inquiries' },
 ])
 

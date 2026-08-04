@@ -3,11 +3,11 @@ services:
   # 🟦 BACKEND (Rust + Actix)
   # ===========================================
   - type: web
-    name: nusawave-api
+    name: monsun-api
     env: rust
     rootDir: backend
     buildCommand: cargo build --release
-    startCommand: ./target/release/nusawave-backend
+    startCommand: ./target/release/monsun-backend
     plan: free
     autoDeploy: true
     envVars:
@@ -22,11 +22,11 @@ services:
   # 🟩 FRONTEND (Vue + Vite)
   # ===========================================
   - type: web
-    name: nusawave
+    name: monsun
     env: static
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     autoDeploy: true
     envVars:
       - key: VITE_API_URL
-        value: https://nusawave-api.onrender.com
+        value: https://monsun-api.onrender.com

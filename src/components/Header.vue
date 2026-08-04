@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl mx-auto px-8 py-6 flex justify-between items-center">
       <!-- Logo -->
       <a href="/" class="flex items-center">
-        <h1 class="text-2xl font-bold text-gray-900">Nusawave Intelligence</h1>
+        <h1 class="text-2xl font-bold text-gray-900">Monsun Intelligence</h1>
       </a>
 
       <!-- Desktop Navigation -->
@@ -55,6 +55,8 @@
                 v-for="(child, i) in link.children"
                 :key="i"
                 :href="child.href"
+                :target="child.external ? '_blank' : undefined"
+                :rel="child.external ? 'noopener noreferrer' : undefined"
                 class="block px-5 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-800 
                        transition-colors duration-150 cursor-pointer"
               >
@@ -134,6 +136,8 @@
                   <li v-for="(child, i) in link.children" :key="i">
                     <a
                       :href="child.href"
+                      :target="child.external ? '_blank' : undefined"
+                      :rel="child.external ? 'noopener noreferrer' : undefined"
                       class="block text-gray-700 hover:text-blue-800 transition-colors duration-150 cursor-pointer"
                       @click="isMenuOpen = false"
                     >
@@ -178,15 +182,15 @@ const navLinks = ref([
       { href: '/#services', label: 'Sea State Monitoring' },
       { href: '/#services', label: 'Predictive Analytics' },
       { href: '/#services', label: 'Custom Data Solutions' },
-      { href: '/#services', label: 'Nusawave Academy' },
+      { href: '/#services', label: 'Monsun Academy' },
     ],
   },
   {
     label: 'Outreach',
     type: 'anchor',
     children: [
-      { href: '/#outreach', label: 'Nusawave Openlab' },
-      { href: '/#outreach', label: 'Nusawave Forecast' },
+      { href: 'https://monsun-labs.github.io', label: 'Monsun Labs', external: true },
+      { href: 'https://monsunic.github.io/monsun-forecast', label: 'Monsun Forecast', external: true },
     ],
   },
   { href: '/#latest-blog', label: 'Blog', type: 'route' },

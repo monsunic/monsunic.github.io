@@ -14,7 +14,7 @@
         Discover Our Outreach
       </h2>
       <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-        Explore our commitment to accessible ocean knowledge through Nusawave OpenLab, our free and open-source learning platform, and Nusawave Forecast, providing reliable ocean state predictions at no cost. 
+        Explore our commitment to accessible ocean knowledge through Monsun Labs, our free and open-source learning platform, and Monsun Forecast, providing reliable ocean state predictions at no cost. 
       </p>
     </div>
 
@@ -24,13 +24,13 @@
       data-aos="fade-up"
       data-aos-delay="400"
     >
-      <!-- Nusawave OpenLab -->
+      <!-- Monsun Labs -->
       <div
         class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
       >
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">
-            Nusawave OpenLab
+            Monsun Labs
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
             Our free, open-source learning platform that democratizes ocean science knowledge,
@@ -39,7 +39,9 @@
           </p>
         </div>
         <a
-          href="#services"
+          href="https://monsun-labs.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
           Learn More
@@ -55,20 +57,22 @@
         </a>
       </div>
 
-      <!-- Predictive Analytics -->
+      <!-- Monsun Forecast -->
       <div
         class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
       >
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">
-            Nusawave Forecast
+            Monsun Forecast
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Nusawave Forecast provides accurate ocean state predictions sourced from worldwide national weather agencies. This service empowers users with essential insights for informed decision-making in ocean-related activities.
+            Monsun Forecast provides accurate ocean state predictions sourced from worldwide national weather agencies. This service empowers users with essential insights for informed decision-making in ocean-related activities.
           </p>
         </div>
         <a
-          href="#services"
+          href="https://monsunic.github.io/monsun-forecast"
+          target="_blank"
+          rel="noopener noreferrer"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
           Learn More

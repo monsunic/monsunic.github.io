@@ -131,7 +131,7 @@
           <p class="text-gray-600 leading-relaxed mb-6">
             We integrate in-situ and remote sensing observations, numerical
             modeling, high-performance computing, and AI to deliver
-            state-of-the-art metocean intelligence.
+            state-of-the-art Monsun Intelligence.
           </p>
         </div>
         <a

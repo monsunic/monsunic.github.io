@@ -5,9 +5,9 @@
                 <!--Company Information-->
                 <section class="lg:col-span-2">
                     <header class="flex items-center mb-6">
-                        <img src="@assets/nusawave-icon-white.ico" alt="Nusawave Icon" class="w-6 h-6" 
+                        <img src="@assets/nusawave-icon-white.ico" alt="Monsun Icon" class="w-6 h-6" 
                         aria-hidden="true"/>
-                        <h2 class="text-2xl font-bold ml-3">Nusawave Intelligence</h2>
+                        <h2 class="text-2xl font-bold ml-3">Monsun Intelligence</h2>
                     </header>
                     <p class="text-gray-400 leading-relaxed mb-10">
                         Bringing value to safe, optimized, and efficient operations for risky maritime and offshore activities.
@@ -106,7 +106,7 @@
             </section>
         <footer class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-500 text-sm mb-4 md:mb-0">
-            &copy; {{ currentYear }} Nusawave Intelligence. All rights reserved
+            &copy; {{ currentYear }} Monsun Intelligence. All rights reserved
         </p>
         <nav aria-label="Legal links">
             <ul class="flex space-x-6">
@@ -131,7 +131,7 @@ const socialLinks = ref([
     // { label: 'Facebook', href: '#', icon: 'fa-brands:facebook-f' },
     // { label: 'Twitter', href: '#', icon: 'fa-brands:twitter' },
     { label: 'Instagram', href: '#', icon: 'fa-brands:instagram' },
-    { label: 'LinkedIn', href: 'https://linkedin.com/company/nusawave', icon: 'fa-brands:linkedin-in' },
+    { label: 'LinkedIn', href: 'https://linkedin.com/company/monsunic', icon: 'fa-brands:linkedin-in' },
     { label: 'YouTube', href: '#', icon: 'fa-brands:youtube' },
 ]);
 const quickLinks = ref([

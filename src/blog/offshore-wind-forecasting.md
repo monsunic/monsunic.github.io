@@ -10,7 +10,7 @@ excerpt: How numerical weather prediction helps optimize offshore wind operation
 Wind energy is one of the fastest-growing sectors in renewable power generation.  
 Accurate meteorological forecasting is critical to ensure optimal turbine performance and operational safety.
 
-### Nusawave’s Role
+### Monsun’s Role
 We couple numerical weather prediction with ocean wave models to provide:
 - **Hourly wind resource assessment**
 - **Wave-induced load estimation**

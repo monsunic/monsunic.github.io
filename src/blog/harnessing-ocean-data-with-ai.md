@@ -8,7 +8,7 @@ excerpt: Explore how artificial intelligence is transforming marine forecasting 
 ## Harnessing Ocean Data with AI
 
 Artificial Intelligence (AI) is revolutionizing how we forecast, monitor, and understand our oceans.  
-At Nusawave, we leverage data-driven models to optimize offshore and maritime decision-making.
+At Monsun, we leverage data-driven models to optimize offshore and maritime decision-making.
 
 - Predictive modeling
 - Wave pattern classification

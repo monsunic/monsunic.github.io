@@ -12,7 +12,7 @@ async fn main() -> std::io::Result<()> {
     dotenvy::dotenv().ok();
     init();
 
-    println!("🚀 Starting NusaWave API... (no database)");
+    println!("🚀 Starting Monsun API... (no database)");
 
     HttpServer::new(move || {
         App::new()

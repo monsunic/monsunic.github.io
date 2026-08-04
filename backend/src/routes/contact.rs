@@ -63,7 +63,7 @@ async fn send_to_telegram(msg: &ContactMessage) -> Result<(), String> {
         .map_err(|_| "Missing TELEGRAM_CHAT_ID env var".to_string())?;
 
     let text = format!(
-        "📩 *New Nusawave Message*\n\n\
+        "📩 *New Monsun Message*\n\n\
          👤 *Name:* {}\n\
          📧 *Email:* {}\n\
          📱 *Phone:* {}\n\

@@ -15,4 +15,4 @@ Access to open marine datasets empowers communities to manage these areas sustai
 - **NOAA WaveWatch III** – Global and regional wave models  
 - **GEBCO** – High-resolution bathymetry  
 
-Nusawave integrates these open sources into easy-to-use dashboards and forecast services for public and research use.
+Monsun integrates these open sources into easy-to-use dashboards and forecast services for public and research use.

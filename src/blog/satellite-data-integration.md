@@ -9,7 +9,7 @@ excerpt: Discover how satellite-derived sea surface data enhances model accuracy
 
 Modern satellites continuously observe the world’s oceans — capturing wave height, wind vectors, and temperature fields in near real-time.
 
-By assimilating these datasets into physical ocean models, Nusawave improves forecast accuracy, particularly in regions with sparse in-situ observations.
+By assimilating these datasets into physical ocean models, Monsun improves forecast accuracy, particularly in regions with sparse in-situ observations.
 
 ### Satellite Sources
 - **Sentinel-3 & Jason-3** for altimetry  

@@ -15,5 +15,5 @@
 //         .expect("Failed to connect to PostgreSQL")
 // }
 pub fn init_lib() {
-    println!("🧩 NusaWave backend initialized (no database).");
+    println!("🧩 Monsun backend initialized (no database).");
 }

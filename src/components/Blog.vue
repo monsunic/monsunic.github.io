@@ -14,7 +14,7 @@
         Latest from Our Blog
       </h2>
       <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-        Insights, forecasts, and technology updates from the Nusawave team.
+        Insights, forecasts, and technology updates from the Monsun team.
       </p>
     </div>
 

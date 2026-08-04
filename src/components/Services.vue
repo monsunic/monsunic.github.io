@@ -118,13 +118,13 @@
         </a>
       </div>
 
-      <!-- NusaWave Academy -->
+      <!-- Monsun Academy -->
       <div
         class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
       >
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">
-            NusaWave Academy
+            Monsun Academy
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
             Educating the next generation of ocean data scientists through
