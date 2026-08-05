@@ -19,9 +19,7 @@ export function organizationSchema() {
     description: DEFAULT_DESCRIPTION,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Gd A, Lt.5, Jl. Angkasa I No. 2, Kemayoran',
       addressLocality: 'Jakarta',
-      postalCode: '10720',
       addressCountry: 'ID',
     },
     sameAs: ['https://linkedin.com/company/monsunic'],

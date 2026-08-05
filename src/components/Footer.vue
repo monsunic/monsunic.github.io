@@ -148,11 +148,11 @@ const contactInfo = ref([
         content:{
             type:'a',
             props:{
-                href:"https://maps.google.com/?q=Gd+A,+Lt.5,+Jl.+Angkasa+I+No.+2,+Kemayoran,+Jakarta+10720,+Indonesia",
+                href:"https://maps.google.com/?q=Jakarta,+Indonesia",
                 target:"_blank",
                 rel:"noopener noreferrer",
             },
-            text:"Gd A, Lt.5, Jl. Angkasa I No. 2, Kemayoran, Jakarta 10720, Indonesia."
+            text:"Jakarta, Indonesia"
         }
     },
     { 

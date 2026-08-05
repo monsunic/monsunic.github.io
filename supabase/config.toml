@@ -1,0 +1,7 @@
+# Supabase local/CLI config for monsun.io
+
+[project]
+id = "chbelxzszssixfmkxwwb"
+
+[functions.contact]
+verify_jwt = false

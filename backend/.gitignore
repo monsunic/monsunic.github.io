@@ -1,0 +1,33 @@
+README_database.md
+
+# 🦀 Rust build artifacts
+/target/
+**/*.rs.bk
+
+.vscode/
+.idea/
+*.iml
+
+# ⚙️ Logs & runtime files
+*.log
+/logs/
+/messages.log
+
+# 🧪 Environment & secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# 🧾 SQLx artifacts (optional)
+sqlx-data.json
+
+# 🧱 OS / misc files
+.DS_Store
+Thumbs.db
+
+# 🧰 Cargo / package manager cache
+.cargo/
+
+migrations
+messages.jsonl

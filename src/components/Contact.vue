@@ -4,6 +4,17 @@
     <h2 class="text-2xl font-bold text-gray-800 mb-6 text-center">Send Us a Message</h2>
 
     <form class="space-y-4" @submit.prevent="sendMessage">
+      <!-- Honeypot — leave empty -->
+      <input
+        v-model="form.website"
+        type="text"
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+        class="hidden"
+        aria-hidden="true"
+      />
+
       <fieldset class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
@@ -41,14 +52,14 @@
       <div class="flex items-center justify-center">
         <button
           type="submit"
-          class="bg-blue-900 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-800 transition w-full md:w-auto"
+          class="bg-blue-900 text-white px-6 py-3 rounded-full shadow-lg hover:bg-blue-800 transition w-full md:w-auto disabled:opacity-60 disabled:cursor-not-allowed"
           aria-label="Submit contact form"
+          :disabled="isSubmitting"
         >
-          Send Message
+          {{ isSubmitting ? 'Sending…' : 'Send Message' }}
         </button>
       </div>
 
-      <!-- ✨ Pesan sukses / error muncul di sini -->
       <p v-if="responseMessage"
         :class="responseStatus === 'success'
           ? 'text-green-600 text-center mt-4 font-medium'
@@ -78,37 +89,96 @@ const form = ref({
   company: '',
   service: '',
   message: '',
+  website: '',
 })
 
 const responseMessage = ref('')
-const responseStatus = ref('') // success / error
+const responseStatus = ref('')
+const isSubmitting = ref(false)
+
+function contactEndpoint() {
+  const supabaseUrl = import.meta.env.VITE_SUPABASE_URL?.replace(/\/$/, '')
+  if (supabaseUrl) {
+    return `${supabaseUrl}/functions/v1/contact`
+  }
+  const apiUrl = import.meta.env.VITE_API_URL?.replace(/\/$/, '')
+  if (apiUrl) {
+    return `${apiUrl}/api/contact`
+  }
+  return null
+}
 
 const sendMessage = async () => {
   responseMessage.value = ''
   responseStatus.value = ''
 
+  if (form.value.website) {
+    responseMessage.value = 'Thank you for contacting us. We\'ll get back to you soon!'
+    responseStatus.value = 'success'
+    return
+  }
+
+  const endpoint = contactEndpoint()
+  if (!endpoint) {
+    responseMessage.value = 'Contact form is not configured. Please email contact@monsun.io.'
+    responseStatus.value = 'error'
+    return
+  }
+
+  isSubmitting.value = true
+
   try {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+    const headers = { 'Content-Type': 'application/json' }
+    const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
+    if (import.meta.env.VITE_SUPABASE_URL && anonKey) {
+      headers.Authorization = `Bearer ${anonKey}`
+      headers.apikey = anonKey
+    }
+
+    const { website: _honeypot, ...payload } = form.value
+    const response = await fetch(endpoint, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(form.value),
+      headers,
+      body: JSON.stringify(payload),
     })
-    const data = await response.json()
 
-    responseMessage.value = data.message
-    responseStatus.value = data.status
+    let data = {}
+    try {
+      data = await response.json()
+    } catch {
+      data = {}
+    }
 
-    if (data.status === 'success') {
-      // reset form
-      form.value = { name: '', phone: '', email: '', company: '', service: '', message: '' }
+    if (!response.ok) {
+      responseMessage.value =
+        data.message || 'Failed to send message. Please try again later.'
+      responseStatus.value = 'error'
+      return
+    }
+
+    responseMessage.value =
+      data.message || 'Thank you for contacting us. We\'ll get back to you soon!'
+    responseStatus.value = data.status === 'error' ? 'error' : 'success'
+
+    if (responseStatus.value === 'success') {
+      form.value = {
+        name: '',
+        phone: '',
+        email: '',
+        company: '',
+        service: '',
+        message: '',
+        website: '',
+      }
     }
   } catch (err) {
     console.error('Error sending message:', err)
     responseMessage.value = 'Failed to send message. Please try again later.'
     responseStatus.value = 'error'
+  } finally {
+    isSubmitting.value = false
   }
 
-  // Opsional: auto-hide message setelah 5 detik
   setTimeout(() => {
     responseMessage.value = ''
   }, 60000)
