@@ -6,10 +6,10 @@
         <section class="w-full lg:w-1/2 text-center lg:text-left">
             <hgroup data-aos="fade-up" data-aos-delay="500">
                 <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
-                    Empowering Decisions with <span class="text-blue-900">Data-Driven Insights</span>
+                    <span class="text-blue-900">Metocean Intelligence</span> for Safer Offshore Decisions
                 </h1>
                 <p class="text-gray-700 text-lg sm:text-xl mb-6">
-                    Bringing value to safe, optimized, and efficient operations for risky maritime and offshore activities.
+                    Monsun provides metocean consultancy and intelligence — sea state monitoring, marine forecasting, and predictive analytics that keep maritime and offshore operations safe, efficient, and data-driven.
                 </p>
             </hgroup>
             <nav data-aos="fade-up" data-aos-delay="400"
@@ -40,9 +40,9 @@
             <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <span class="bg-blue-500 rounded w-64 g-64 sm:w-110 sm:h-80 absolute -top-10 -left-10
                 opacity-20" aria-hidden="true"></span>
-                <img src="@assets/nusawave-landing-dummy.png" alt="Hero Image"
+                <img src="@assets/hero-metocean.jpg" alt="Monsun metocean intelligence for offshore and maritime operations"
                 class="relative z-10 rounded shadow-2xl w-full object-cover"
-                width="600" height="400" loading="eager"/>
+                width="960" height="640" loading="eager"/>
             </div>
         </figure>
         </article>

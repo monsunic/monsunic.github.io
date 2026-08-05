@@ -20,6 +20,9 @@ export default defineConfig({
       transform(src, id) {
         if (id.endsWith('.md')) {
           const { content, data } = matter(src)
+          if (data.date instanceof Date) {
+            data.date = data.date.toISOString().slice(0, 10)
+          }
           return `
             export const frontmatter = ${JSON.stringify(data)};
             export default ${JSON.stringify(content)};

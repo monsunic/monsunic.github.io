@@ -39,7 +39,7 @@
           </p>
         </div>
         <a
-          href="https://monsun-labs.github.io"
+          href="https://labs.monsun.io"
           target="_blank"
           rel="noopener noreferrer"
           class="text-blue-700 font-medium inline-flex items-center group"
@@ -70,7 +70,7 @@
           </p>
         </div>
         <a
-          href="https://monsunic.github.io/monsun-forecast"
+          href="https://forecast.monsun.io"
           target="_blank"
           rel="noopener noreferrer"
           class="text-blue-700 font-medium inline-flex items-center group"

@@ -5,12 +5,13 @@
                 <!--Company Information-->
                 <section class="lg:col-span-2">
                     <header class="flex items-center mb-6">
-                        <img src="@assets/nusawave-icon-white.ico" alt="Monsun Icon" class="w-6 h-6" 
+                        <img src="@assets/nusawave-icon-white.ico" alt="" class="w-6 h-6" 
                         aria-hidden="true"/>
                         <h2 class="text-2xl font-bold ml-3">Monsun Intelligence</h2>
                     </header>
                     <p class="text-gray-400 leading-relaxed mb-10">
-                        Bringing value to safe, optimized, and efficient operations for risky maritime and offshore activities.
+                        Monsun delivers metocean intelligence and consultancy for safer,
+                        optimized maritime and offshore operations.
                     </p>
                     <nav aria-label="Social media links">
                         <ul class="flex space-x-4">
@@ -31,7 +32,7 @@
                         <ul class="space-y-3">
                             <li v-for="(item,index) in quickLinks" :key="index">
                                 <a :href="item.href" class="flex items-center gap-3 text-gray-400 hover:text-white transition-colors duration-200"
-                                :aria-label="item.label" target="_blank" rel="noopener noreferrer">
+                                :aria-label="item.label">
                                     <Icon :icon="item.icon" class="text-lg"/>
                                     <span>{{ item.label }}</span>
                                 </a>
@@ -61,7 +62,6 @@
                         class="text-xl mt-1 mr-4 text-gray-500 flex-shrink-0"
                     />
 
-                    <!-- dynamic component for link or span -->
                     <component
                         :is="item.content.type"
                         v-bind="item.content.props"
@@ -80,7 +80,7 @@
                 <h3 id="newsletter-heading" class="text-xl font-bold mb-2 text-white">
                     Subscribe to Our Blog
                 </h3>
-                <p class="text-gray-400">Get updates on forecasts, analytics, and digital ocean insights.</p>
+                <p class="text-gray-400">Get updates on metocean forecasts, analytics, and ocean insights.</p>
                 </div>
 
                 <form
@@ -104,7 +104,7 @@
                 </form>
             </div>
             </section>
-        <footer class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
         <p class="text-gray-500 text-sm mb-4 md:mb-0">
             &copy; {{ currentYear }} Monsun Intelligence. All rights reserved
         </p>
@@ -120,27 +120,28 @@
             </li>
             </ul>
         </nav>
-        </footer>
+        </div>
         </div>
     </footer>
 </template>
 <script setup>
-import { ref, computed } from 'vue';
-const currentYear= computed(() => new Date().getFullYear());
+import { ref, computed } from 'vue'
+import { Icon } from '@iconify/vue'
+
+const currentYear = computed(() => new Date().getFullYear())
 const socialLinks = ref([
-    // { label: 'Facebook', href: '#', icon: 'fa-brands:facebook-f' },
-    // { label: 'Twitter', href: '#', icon: 'fa-brands:twitter' },
     { label: 'Instagram', href: '#', icon: 'fa-brands:instagram' },
     { label: 'LinkedIn', href: 'https://linkedin.com/company/monsunic', icon: 'fa-brands:linkedin-in' },
     { label: 'YouTube', href: '#', icon: 'fa-brands:youtube' },
-]);
+])
 const quickLinks = ref([
-    { label: 'Home', href: '#home', icon: 'mdi:home' },
-    { label: 'About Us', href: '#about', icon: 'mdi:information' },
-    { label: 'Services', href: '#services', icon: 'mdi:cog' },
-    { label: 'Outreach', href: '#outreach', icon: 'mdi:earth' },
-    { label: 'Contact', href: '#contact', icon: 'mdi:phone' },
-]);
+    { label: 'Home', href: '/#home', icon: 'mdi:home' },
+    { label: 'About Us', href: '/#about', icon: 'mdi:information' },
+    { label: 'Services', href: '/#services', icon: 'mdi:cog' },
+    { label: 'Blog', href: '/blog', icon: 'mdi:post' },
+    { label: 'Outreach', href: '/#outreach', icon: 'mdi:earth' },
+    { label: 'Contact', href: '/#contact', icon: 'mdi:phone' },
+])
 const contactInfo = ref([
     { 
         icon:"material-symbols:location-on",
@@ -169,7 +170,7 @@ const contactInfo = ref([
         content:{
             type:'a',
             props:{
-                href:"#",
+                href:"tel:+6282246389999",
             },
             text:"+62 822 4638 9999"
         }
@@ -182,10 +183,10 @@ const contactInfo = ref([
             text:"24/7 Support"
         }
     },
-]);
+])
 const legalLinks = ref([
     { label: 'Privacy Policy', href: '#' },
     { label: 'Terms of Service', href: '#' },
-    { label: 'Sitemap', href: '#' },
-]);
+    { label: 'Sitemap', href: '/sitemap.xml' },
+])
 </script>

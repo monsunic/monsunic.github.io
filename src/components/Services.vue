@@ -11,11 +11,11 @@
       data-aos-delay="200"
     >
       <h2 class="text-3xl sm:text-5xl font-bold text-blue-900 mb-6">
-        Our Services
+        Metocean Consultancy Services
       </h2>
       <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-        Empowering marine and offshore operations with data-driven intelligence,
-        predictive insights, and modern ocean technology.
+        Monsun delivers metocean intelligence for marine and offshore operations —
+        sea state monitoring, predictive forecasting, and tailored ocean data solutions.
       </p>
     </div>
 
@@ -34,16 +34,16 @@
             Sea State Monitoring
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Delivering near real-time analysis of waves, currents, and tides to
+            Near real-time metocean analysis of waves, currents, and tides to
             enhance maritime safety and support offshore decision-making with
             precision and confidence.
           </p>
         </div>
         <a
-          href="#services"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Consult with us
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"
@@ -62,19 +62,19 @@
       >
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">
-            Predictive Analytics
+            Predictive Ocean Analytics
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Harnessing AI and numerical models to forecast ocean and weather
-            conditions, enabling smarter, data-driven planning and risk
-            mitigation for marine operations.
+            AI and numerical models for marine forecasting — ocean and weather
+            predictions that enable smarter planning and risk mitigation for
+            offshore metocean operations.
           </p>
         </div>
         <a
-          href="#services"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Consult with us
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"
@@ -93,19 +93,18 @@
       >
         <div>
           <h3 class="text-xl font-semibold text-blue-800 mb-4">
-            Custom Data Solutions
+            Custom Metocean Data Solutions
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Providing tailored ocean data integration, visualization, and API
-            access that adapt to specific industrial, academic, or environmental
-            needs.
+            Tailored ocean data integration, visualization, and API access for
+            industrial, academic, and environmental metocean consulting needs.
           </p>
         </div>
         <a
-          href="#services"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Consult with us
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"
@@ -127,16 +126,15 @@
             Monsun Academy
           </h3>
           <p class="text-gray-600 leading-relaxed mb-6">
-            Educating the next generation of ocean data scientists through
-            hands-on courses in Python, metocean modeling, and high-performance
-            computing for marine applications.
+            Hands-on courses in Python, metocean modeling, and high-performance
+            computing for the next generation of ocean data scientists.
           </p>
         </div>
         <a
-          href="#services"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Consult with us
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"

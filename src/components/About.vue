@@ -11,13 +11,13 @@
       data-aos-delay="200"
     >
       <h2 class="text-3xl sm:text-5xl font-bold text-blue-900 mb-6">
-        Our Mission
+        About Monsun Metocean Intelligence
       </h2>
       <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-        To provide accurate, real-time information on sea state conditions
-        through advanced metocean technology. We combine oceanographic
-        expertise, numerical modeling, and emerging AI innovations to enable
-        smarter, safer, and more efficient offshore operations.
+        Monsun is a metocean intelligence company providing accurate, real-time
+        sea state information through advanced metocean technology. We combine
+        oceanographic expertise, numerical modeling, and AI to enable smarter,
+        safer offshore operations for clients who need trusted metocean consultancy.
       </p>
     </div>
 
@@ -42,10 +42,10 @@
           </p>
         </div>
         <a
-          href="#about"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Talk to our team
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"
@@ -73,10 +73,10 @@
           </p>
         </div>
         <a
-          href="#about"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Talk to our team
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"
@@ -104,10 +104,10 @@
           </p>
         </div>
         <a
-          href="#about"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Talk to our team
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"
@@ -131,14 +131,14 @@
           <p class="text-gray-600 leading-relaxed mb-6">
             We integrate in-situ and remote sensing observations, numerical
             modeling, high-performance computing, and AI to deliver
-            state-of-the-art Monsun Intelligence.
+            state-of-the-art Monsun metocean intelligence.
           </p>
         </div>
         <a
-          href="#about"
+          href="#contact"
           class="text-blue-700 font-medium inline-flex items-center group"
         >
-          Learn More
+          Talk to our team
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 ml-1 transition-transform duration-200 group-hover:translate-x-1"

@@ -2,8 +2,8 @@
   <header class="bg-gradient-to-r from-blue-100 to-blue-100 shadow-md fixed w-full z-50 backdrop-blur-md bg-white/60">
     <div class="max-w-screen-xl mx-auto px-8 py-6 flex justify-between items-center">
       <!-- Logo -->
-      <a href="/" class="flex items-center">
-        <h1 class="text-2xl font-bold text-gray-900">Monsun Intelligence</h1>
+      <a href="/" class="flex items-center" aria-label="Monsun home">
+        <span class="text-2xl font-bold text-gray-900">Monsun Intelligence</span>
       </a>
 
       <!-- Desktop Navigation -->
@@ -189,11 +189,11 @@ const navLinks = ref([
     label: 'Outreach',
     type: 'anchor',
     children: [
-      { href: 'https://monsun-labs.github.io', label: 'Monsun Labs', external: true },
-      { href: 'https://monsunic.github.io/monsun-forecast', label: 'Monsun Forecast', external: true },
+      { href: 'https://labs.monsun.io', label: 'Monsun Labs', external: true },
+      { href: 'https://forecast.monsun.io', label: 'Monsun Forecast', external: true },
     ],
   },
-  { href: '/#latest-blog', label: 'Blog', type: 'route' },
+  { href: '/blog', label: 'Blog', type: 'route' },
   { href: '/#about', label: 'About Us', type: 'anchor' },
   { href: '/#contact', label: 'Contact', type: 'anchor' },
 ])

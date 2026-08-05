@@ -14,7 +14,7 @@
         Latest from Our Blog
       </h2>
       <p class="text-gray-700 text-lg sm:text-xl leading-relaxed">
-        Insights, forecasts, and technology updates from the Monsun team.
+        Insights on metocean consultancy, marine forecasting, and ocean technology from the Monsun team.
       </p>
     </div>
 
@@ -33,8 +33,11 @@
           <img
             v-if="post.meta.image"
             :src="post.meta.image"
-            alt="Blog cover"
+            :alt="post.meta.title"
             class="rounded-xl mb-6 object-cover w-full h-48"
+            loading="lazy"
+            width="800"
+            height="450"
           />
           <h3 class="text-xl font-semibold text-blue-800 mb-3">
             <RouterLink
@@ -84,12 +87,10 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue"
+import { ref, computed } from "vue"
 
-// ✅ 1. Load all markdown files dynamically
 const markdownFiles = import.meta.glob('../blog/*.md', { eager: true })
 
-// ✅ 2. Convert them into an array of objects
 const posts = ref(
   Object.keys(markdownFiles).map((path) => {
     const file = markdownFiles[path]
@@ -101,13 +102,10 @@ const posts = ref(
   })
 )
 
-// ✅ 3. Pick latest 3 posts by date
-const latestPosts = ref([])
-
-onMounted(() => {
-  latestPosts.value = [...posts.value]
-    .filter(p => p.meta.date) // make sure it has a date
+const latestPosts = computed(() =>
+  [...posts.value]
+    .filter((p) => p.meta.date)
     .sort((a, b) => new Date(b.meta.date) - new Date(a.meta.date))
     .slice(0, 3)
-})
+)
 </script>
