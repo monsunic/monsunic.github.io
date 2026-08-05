@@ -159,9 +159,9 @@ const contactInfo = ref([
         content:{
             type:'a',
             props:{
-                href:"mailto:nusawaveintelligence@gmail.com",
+                href:"mailto:contact@monsun.io",
             },
-            text:"nusawaveintelligence@gmail.com"
+            text:"contact@monsun.io"
         }
     },
     { 
